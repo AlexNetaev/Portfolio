@@ -1,48 +1,89 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
 }
 
-header {
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px;
     background: #0073e6;
     color: white;
 }
 
-nav {
-    text-align: center;
-    padding: 10px 0;
-    background: #f4f4f4;
-    border-bottom: 1px solid #ddd;
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
-nav a {
+.header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Navigation */
+.navbar {
+    background: #f4f4f4;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.navbar a {
     margin: 0 15px;
     color: #0073e6;
     text-decoration: none;
+    font-size: 1em;
 }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+.navbar a:hover {
+    color: #005bb5;
 }
 
-section {
+/* Main Content */
+.section {
+    margin: 40px 0;
+}
+
+.section h2 {
+    font-size: 1.8em;
     margin-bottom: 20px;
+    color: #0073e6;
 }
 
-footer {
+/* Footer */
+.footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background: #333;
     color: white;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .navbar a {
+        font-size: 0.9em;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
 }
